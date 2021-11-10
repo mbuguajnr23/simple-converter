@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.razormist.simpleconverter.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_foot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foot"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/et_foot"
+        android:layout_toLeftOf="@+id/et_inches"/>
+
+    <EditText
+        android:id="@+id/et_foot"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@+id/tv_foot"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/tv_inches"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Inches"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/et_inches"
+        android:layout_alignBottom="@+id/et_inches"/>
+
+    <EditText
+        android:id="@+id/et_inches"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/et_foot"
+        android:layout_toRightOf="@+id/tv_inches"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btn_convert"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/et_inches"
+        android:text="Convert"/>
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/btn_convert"
+        android:text="Clear"/>
+
+</RelativeLayout>
